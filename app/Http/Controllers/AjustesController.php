@@ -59,7 +59,7 @@ class AjustesController extends Controller
     {
         $post = $request->all();
         $datos = TblAjustesModel::where('id_listSelDetalle', $post['id_listSelDetalle'])->first();
-        $datos->id_listadoSeleccion = $post['id_listadoSeleccion'];
+        $datos->id_listadoSeleccion = $post['listadoSeleccion'];
         $datos->descripcion = $post['descripcion'];
         $datos->mod_usuario = Auth::user()->id_encuestador;
         $datos->save();

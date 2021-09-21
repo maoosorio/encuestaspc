@@ -23,7 +23,11 @@ Route::group(['prefix' => 'post', 'middleware' => ['auth']], function(){
     })
 */
 Route::get('/', 'DashboardController@inicio')->name('inicio');
-Route::get('inactivo', function(){ return view('inactivo'); })->name('inactivo');
+Route::get('inactivo', function(){ 
+    return view('inactivo'); 
+})->name('inactivo');
+
+Route::get('graficos','GraficosController@inicio')->name('inicio');
 
 Route::group(['middleware' => 'auth:web'], function() {
     Route::get('logout', 'DashboardController@logout')->name('logout');

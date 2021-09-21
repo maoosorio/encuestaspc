@@ -69,6 +69,8 @@
     <script src="{{URL::asset('plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js')}}"></script>
     <!-- Toastr-->
     <script src="{{URL::asset('plugins/toastr/toastr.min.js')}}"></script>
+    <!-- Chasrt-->
+    <script src="{{URL::asset('plugins/chart.js/Chart.min.js')}}"></script>
     <!-- AdminLTE App -->
     <script src="{{URL::asset('js/adminlte.js')}}"></script>
     <!-- AdminLTE for demo purposes -->
